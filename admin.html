@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель | VR/AR Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <div class="header-logo-icon"><img src="img/иконка.png" alt="Галерея проектов"></div> VR/AR Portfolio
+        </a>
+        <div class="header-menu">
+            <nav class="header-nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="admin.html" class="active">Управление</a>
+            </nav>
+            <div class="theme-switcher">
+                <button class="theme-button active" data-theme="light">☀️</button>
+                <button class="theme-button" data-theme="dark">🌙</button>
+            </div>
+            <div class="header-auth"><a href="login.html">Выйти</a></div>
+            <button class="header-burger">☰</button>
+        </div>
+    </header>
+
+    <main class="admin">
+        <div class="admin-form">
+            <h2 class="admin-title">Добавить проект</h2>
+            <form>
+                <label>Название</label>
+                <input type="text" class="field" required>
+                <div class="error-text">Обязательное поле</div>
+                <label>Категория</label>
+                <select class="field">
+                    <option>Unity</option>
+                    <option>Blender</option>
+                    <option>Varwin</option>
+                </select>
+                <label>Описание</label>
+                <textarea placeholder="Краткое описание..."></textarea>
+                <button type="submit" class="button" style="width:100%">Добавить в каталог</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-copyright">© 2026 "IT-куб"</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

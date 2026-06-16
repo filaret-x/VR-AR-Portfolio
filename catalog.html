@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог | VR/AR Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <div class="header-logo-icon"><img src="img/иконка.png" alt="Галерея проектов"></div> VR/AR Portfolio
+        </a>
+        <div class="header-menu">
+            <nav class="header-nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html" class="active">Каталог</a>
+                <a href="profile.html">Кабинет</a>
+            </nav>
+            <div class="theme-switcher">
+                <button class="theme-button active" data-theme="light">☀️</button>
+                <button class="theme-button" data-theme="dark">🌙</button>
+            </div>
+            <div class="header-auth">
+                <a href="login.html">Вход</a>
+                <a href="register.html">Регистрация</a>
+            </div>
+            <button class="header-burger">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="catalog">
+            <aside class="filters">
+                <div class="filter-group">
+                    <div class="filter-title">Категория</div>
+                    <label class="filter-option"><input type="radio" name="cat" value="all" checked> Все проекты</label>
+                    <label class="filter-option"><input type="radio" name="cat" value="unity"> Unity</label>
+                    <label class="filter-option"><input type="radio" name="cat" value="blender"> Blender</label>
+                    <label class="filter-option"><input type="radio" name="cat" value="varwin"> Varwin</label>
+                </div>
+            </aside>
+
+            <section class="catalog-content">
+                <div class="catalog-panel">
+                    <button class="filter-toggle">☰ Фильтры</button>
+                    <span class="projects-count">Все проекты</span>
+                    <select class="catalog-sort">
+                        <option value="default">Сортировка</option>
+                        <option value="date">По дате</option>
+                        <option value="likes">По популярности</option>
+                    </select>
+                </div>
+                <div class="grid" id="catalog-grid"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-copyright">© 2026 "IT-куб"</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

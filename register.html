@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | VR/AR Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <div class="header-logo-icon"><img src="img/иконка.png" alt="Галерея проектов"></div> VR/AR Portfolio
+        </a>
+        <div class="header-menu">
+            <nav class="header-nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="profile.html">Кабинет</a>
+            </nav>
+            <div class="theme-switcher">
+                <button class="theme-button active" data-theme="light">☀️</button>
+                <button class="theme-button" data-theme="dark">🌙</button>
+            </div>
+            <div class="header-auth">
+                <a href="login.html">Вход</a>
+                <a href="register.html" class="active">Регистрация</a>
+            </div>
+            <button class="header-burger">☰</button>
+        </div>
+    </header>
+    <main class="auth-page">
+        <div class="auth-form">
+            <h2 class="auth-title">Создать аккаунт</h2>
+            <form>
+                <label>Имя</label>
+                <input type="text" class="field" required>
+                <div class="error-text">Обязательное поле</div>
+                <label>Email</label>
+                <input type="email" class="field" required>
+                <div class="error-text">Неверный формат e-mail</div>
+                <label>Пароль</label>
+                <input type="password" id="reg-password" class="field" required minlength="8">
+                <div class="error-text">Минимум 8 символов, цифра</div>
+                <label>Подтвердите пароль</label>
+                <input type="password" id="confirm-password" class="field" required>
+                <div class="error-text">Пароли не совпадают</div>
+                <label class="checkbox-field"><input type="checkbox" required> Согласен с <a href="#">политикой
+                        конфиденциальности</a></label>
+                <div class="error-text" id="agree-err">Необходимо согласие</div>
+                <button type="submit" class="button auth-button">Зарегистрироваться</button>
+            </form>
+            <div class="auth-footer">Есть аккаунт? <a href="login.html">Войти</a></div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-copyright">© 2026 "IT-куб"</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

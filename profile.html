@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет | VR/AR Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="header-logo">
+            <div class="header-logo-icon"><img src="img/иконка.png" alt="Галерея проектов"></div> VR/AR Portfolio
+        </a>
+        <div class="header-menu">
+            <nav class="header-nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="profile.html" class="active">Кабинет</a>
+            </nav>
+            <div class="theme-switcher">
+                <button class="theme-button active" data-theme="light">☀️</button>
+                <button class="theme-button" data-theme="dark">🌙</button>
+            </div>
+            <div class="header-auth"><a href="login.html">Выйти</a></div>
+            <button class="header-burger">☰</button>
+        </div>
+    </header>
+
+    <main class="profile">
+        <div class="profile-header">
+            <div class="profile-avatar">И</div>
+            <div class="profile-details">
+                <h2>Иван И.</h2>
+                <a href="admin.html" class="button" style="margin-top:12px">Админ-панель</a>
+            </div>
+        </div>
+
+        <div class="profile-block">
+            <h3>Избранные и лайкнутые проекты</h3>
+            <div class="sort-buttons">
+                <button class="sort-button active" data-sort="date-desc">Сначала новые</button>
+                <button class="sort-button" data-sort="date-asc">Сначала старые</button>
+                <button class="sort-button" data-sort="name">По названию (А-Я)</button>
+            </div>
+            <table class="profile-table">
+                <thead>
+                    <tr>
+                        <th>Проект</th>
+                        <th>Автор</th>
+                        <th>Статус</th>
+                        <th>Дата</th>
+                    </tr>
+                </thead>
+                <tbody id="profile-table-body"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-copyright">© 2026 "IT-куб"</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
