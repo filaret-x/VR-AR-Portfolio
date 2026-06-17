@@ -97,21 +97,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ДАННЫЕ ПРОЕКТОВ
   var projects = [
-    { id: 1, title: 'VR-квартира мечты', author: 'Алексей К.', category: 'Unity', likes: 87, date: '2026-05-25', image: 'img/квартира.png', description: 'Интерактивный тур по квартире в VR' },
-    { id: 2, title: '3D-модель дракона', author: 'София М.', category: 'Blender', likes: 64, date: '2026-05-24', image: 'img/дракон.jpg', description: 'Детализированная модель с анимацией' },
-    { id: 3, title: 'AR-гид по музею', author: 'Денис Д.', category: 'Varwin', likes: 92, date: '2026-05-23', image: 'img/музей.png', description: 'Дополненная реальность для экскурсии' },
-    { id: 4, title: 'Космический шутер', author: 'Егор П.', category: 'Unity', likes: 78, date: '2026-05-22', image: 'img/шутер.png', description: 'VR-игра в открытом космосе' },
-    { id: 5, title: 'Интерьер кафе', author: 'Мария Л.', category: 'Blender', likes: 55, date: '2026-05-21', image: 'img/кафе.jpg', description: 'Визуализация дизайн-проекта' },
-    { id: 6, title: 'Виртуальная лаборатория', author: 'Богдан В.', category: 'Varwin', likes: 71, date: '2026-05-20', image: 'img/лаборатория.jpg', description: 'Образовательный VR-класс по физике' },
-    { id: 7, title: 'Средневековый замок', author: 'Анна Г.', category: 'Unity', likes: 95, date: '2026-05-19', image: 'img/замок.jpg', description: 'Историческая реконструкция в VR' },
-    { id: 8, title: 'Робот-помощник', author: 'Артём В.', category: 'Blender', likes: 48, date: '2026-05-18', image: 'img/робот.jpg', description: '3D-модель' },
-    { id: 9, title: 'AR-меню ресторана', author: 'Дмитрий Т.', category: 'Varwin', likes: 63, date: '2026-05-17', image: 'img/меню.jpg', description: 'Блюда в дополненной реальности' },
-    { id: 10, title: 'Гонки на выживание', author: 'Виктория С.', category: 'Unity', likes: 82, date: '2026-05-16', image: 'img/гонки.jpg', description: 'Мультиплеерная VR-игра' },
-    { id: 11, title: 'Анимационный ролик', author: 'Роман Ш.', category: 'Blender', likes: 59, date: '2026-05-15', image: 'img/анимация.png', description: '3D-анимация робота' },
-    { id: 12, title: 'Тренажёр хирурга', author: 'Ксения У.', category: 'Varwin', likes: 88, date: '2026-05-14', image: 'img/тренажер.jpg', description: 'Обучающий VR-симулятор' },
-    { id: 13, title: 'Подводный мир', author: 'Кирилл Г.', category: 'Unity', likes: 73, date: '2026-05-13', image: 'img/подводныймир.png', description: 'Исследование океана в VR' },
-    { id: 14, title: 'Модель автомобиля', author: 'Емильян О.', category: 'Blender', likes: 67, date: '2026-05-12', image: 'img/спорткар.jpg', description: 'Детализированный спорткар' },
-    { id: 15, title: 'AR-примерочная', author: 'Александра М.', category: 'Varwin', likes: 81, date: '2026-05-11', image: 'img/примерочная.jpg', description: 'Виртуальная примерка одежды' }
+    { id: 1, title: 'VR-квартира мечты', author: 'Алексей К.', category: 'Unity', likes: 87, date: '2026-05-22', image: 'img/квартира.png', description: 'Интерактивный тур по квартире в VR' },
+    { id: 2, title: '3D-модель дракона', author: 'София М.', category: 'Blender', likes: 64, date: '2026-05-17', image: 'img/дракон.jpg', description: 'Детализированная модель с анимацией' },
+    { id: 3, title: 'AR-гид по музею', author: 'Денис Д.', category: 'Varwin', likes: 92, date: '2026-05-13', image: 'img/музей.png', description: 'Дополненная реальность для экскурсии' },
+    { id: 4, title: 'Космический шутер', author: 'Егор П.', category: 'Unity', likes: 78, date: '2026-05-25', image: 'img/шутер.png', description: 'VR-игра в открытом космосе' },
+    { id: 5, title: 'Интерьер кафе', author: 'Мария Л.', category: 'Blender', likes: 55, date: '2026-05-12', image: 'img/кафе.jpg', description: 'Визуализация дизайн-проекта' },
+    { id: 6, title: 'Виртуальная лаборатория', author: 'Богдан В.', category: 'Varwin', likes: 71, date: '2026-05-16', image: 'img/лаборатория.jpg', description: 'Образовательный VR-класс по физике' },
+    { id: 7, title: 'Средневековый замок', author: 'Анна Г.', category: 'Unity', likes: 95, date: '2026-05-11', image: 'img/замок.jpg', description: 'Историческая реконструкция в VR' },
+    { id: 8, title: 'Робот-помощник', author: 'Артём В.', category: 'Blender', likes: 48, date: '2026-05-15', image: 'img/робот.jpg', description: '3D-модель' },
+    { id: 9, title: 'AR-меню ресторана', author: 'Дмитрий Т.', category: 'Varwin', likes: 63, date: '2026-05-24', image: 'img/меню.jpg', description: 'Блюда в дополненной реальности' },
+    { id: 10, title: 'Гонки на выживание', author: 'Виктория С.', category: 'Unity', likes: 82, date: '2026-05-14', image: 'img/гонки.jpg', description: 'Мультиплеерная VR-игра' },
+    { id: 11, title: 'Анимационный ролик', author: 'Роман Ш.', category: 'Blender', likes: 59, date: '2026-05-18', image: 'img/анимация.png', description: '3D-анимация робота' },
+    { id: 12, title: 'Тренажёр хирурга', author: 'Ксения У.', category: 'Varwin', likes: 88, date: '2026-05-20', image: 'img/тренажер.jpg', description: 'Обучающий VR-симулятор' },
+    { id: 13, title: 'Подводный мир', author: 'Кирилл Г.', category: 'Unity', likes: 73, date: '2026-05-23', image: 'img/подводныймир.png', description: 'Исследование океана в VR' },
+    { id: 14, title: 'Модель автомобиля', author: 'Емильян О.', category: 'Blender', likes: 67, date: '2026-05-21', image: 'img/спорткар.jpg', description: 'Детализированный спорткар' },
+    { id: 15, title: 'AR-примерочная', author: 'Александра М.', category: 'Varwin', likes: 81, date: '2026-05-19', image: 'img/примерочная.jpg', description: 'Виртуальная примерка одежды' }
   ];
 
   // ЛАЙКИ И ИЗБРАННОЕ
