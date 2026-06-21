@@ -557,8 +557,13 @@ ul {
 }
 
 .advantage-icon {
-  font-size: 36px;
   margin-bottom: 12px;
+}
+
+.advantage-icon img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
 }
 
 .advantage-item h4 {
@@ -1236,8 +1241,9 @@ textarea:focus {
     padding: 20px 14px;
   }
 
-  .advantage-icon {
-    font-size: 28px;
+  .advantage-icon img {
+    width: 28px;
+    height: 28px;
   }
 
   .advantage-item h4 {
